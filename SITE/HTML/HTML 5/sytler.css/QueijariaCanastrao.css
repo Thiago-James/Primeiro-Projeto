@@ -1,0 +1,248 @@
+/***Estilo Seções***/
+
+header {
+    display: block;
+    margin-bottom: 1px;
+    }
+    nav {
+    display: block;
+    width: 20%;
+    float: left;
+    }
+    section {
+    display: block;
+    width: 70%;
+    float: right;
+    }
+
+    /***Estilo Geral***/
+
+    body {
+    color: #3366BB;
+    font-size: 16px;
+    background-color: #EEDDAA;
+    font-family: stoke, Lucida Bright, liberation;
+    }
+    a:link { color:#2255AA; text-decoration:none; }
+    a:visited { color:#2255CC; text-decoration:none; }
+    ol { line-height: 200%; }
+    ul { line-height: 200%; }
+
+    /****Estilo Nav****/
+
+    nav ul {
+    color: #3366BB;
+    margin-top: 40px;
+    line-height: 230%;
+    list-style-type: disc;
+    }
+    
+    /**** Estilo Header****/
+
+    .ender {
+    float: right;
+    text-align: right;
+    font-size: 14px;
+    line-height: 140%;
+    font-family: karla, verdana, ubuntu;
+    }
+    img.imgLogo {
+    padding-bottom: 15px;
+    border-bottom: 4px solid #3366BB;
+    margin-bottom: 6px;
+    }
+    
+    /***** Harmonização de Queijos e Vinhos****/
+
+    .Titulo {
+    text-align: center;
+    }
+    .listaQueijos {
+    color: #3366BB;
+    width: 440px;
+    font-size: 14px;
+    border: 2px solid #3366BB;
+    margin: 0px auto 10px auto;
+    background-color: #FFFFBB;
+    list-style-type: disc;
+    }
+    .listaQueijos ul {
+    color: #3366BB;
+    list-style-type: disc;
+    }
+    
+    /***** Estilo Seção Apresentação******/
+
+    div.apres {
+    text-align: center;
+    font-size: 16px;
+    }
+
+    /****** Estilo Seção Harmonização****/
+
+    .Titulo {
+    text-align: center;
+    }
+    h4 {
+    font-size: 14px;
+    }
+    .listaQueijo {
+    width: 440px;
+    color: #3366BB;
+    font-size: 10px;
+    border: 2px solid #3366BB;
+    margin: 0px auto 10px auto;
+    background-color: #FFFFBB;
+    list-style-type: disc;
+    }
+    .listaQueijo dd dt dl {
+    color: #3366BB;
+    font-size: 14px;
+    list-style-type: disc;
+    }
+    .procedencia {
+    <a>
+    }
+
+    /*** Estilo Formulários**/
+
+    .divCompras {
+    color: #2255AA;
+    border: 2px solid #000000;
+    margin: 20px auto;
+    padding: 6px 6px 15px 6px;
+    background-color: #FFFFBB;
+    font-size: 12px;
+    width: 550px;
+    }
+
+    /*** Elementos do Formulário ***/
+
+    .listaCompras {
+    float: right;
+    width: 210px;
+    height: 160px;
+    margin-top: 2px;
+    margin-left: 10px;
+    }
+    .colLabSelProd {
+    width: 230px;
+    height: 40px;
+    float: left;
+    }
+    .colSelProd {
+    width: 160px;
+    float: right;
+    }
+    .linhaProdSel {
+    float: left;
+    width: 220px;
+    margin-bottom: 6px;
+    }
+    .elemEsq {
+    float: left;
+    display:block;
+    }
+    .elemDir {
+    float: right;
+    display:block;
+    }
+    .botoes {
+    text-align: right;
+    margin: 20px 10px 0px 10px;
+    }
+
+    /*** Fieldsets ***/
+
+    .fsEsq {
+    float: left;
+    display: inline;
+    margin: 0px 0px 0px 0px;
+    }
+    .fsDir {
+    float: right;
+    display: inline;
+    margin: 0px 0px 0px 0px;
+    }
+
+    /*** Tamanho de Input ***/
+
+    .inpGrande { width: 380px; }
+    .inpMedio { width: 80px; }
+    .inpNCC { width: 130px; }
+    .inpTelef { width: 90px; }
+    .inpEnder { width: 180px; height: 50px; }
+    .numDD { width:30px; }
+    .numQD { width:50px; }
+
+    /*******Estilo Formulário Dados******/
+
+    .divLinha {
+    width: 500px;
+    margin-bottom: 6px;
+    }
+    .colLabCrd {
+    width: 260px;
+    height: 40px;
+    float: left;
+    }
+    .colPri {
+    float: left;
+    width: 90px;
+    display: block;
+    }
+    .colPriCompras {
+    float: left;
+    width: 86px;
+    display: block;
+    }
+    .colPriPag {
+    float: left;
+    width: 250px;
+    display: block;
+    }
+
+    /*******Estilo Seção de Queijos*****/
+
+    .tabQueijo {
+    color: #114499;
+    margin-top: 6px;
+    border-collapse: collapse;
+    background-color: #FFFFBB;
+    text-align: center;
+    font-size: 15px;
+    font-family: karla, verdana, ubuntu;
+    }
+    .tabQueijo th {
+    border: 2px solid #000000;
+    padding: 6px 12px 6px 12px;
+    }
+    .tabQueijo td {
+    border: 2px solid #000000;
+    padding: 6px 12px 6px 12px;
+    }
+    .tabQueijo .Titulo {
+    color: #EEEE00;
+    vertical-align: middle;
+    background-color: #887733;
+    }
+    .tabQueijo .linTH {
+    color: #EEEE00;
+    vertical-align: middle;
+    background-color: #887733;
+    }
+    .tabQueijo .colTH {
+    color: #222222;
+    text-align: left;
+    background-color: #CCBB88;
+    }
+    .tabQueijo .Preço {
+    color: #CC0000;
+    }
+    .tabQueijo .imgCel {
+    background-color: ;
+    }
+    .imgCel img {
+    width: 60px;
+    height: 44px;
+    }
