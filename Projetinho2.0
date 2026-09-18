@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo</title>
+
+    <style>
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            margin: 30px;
+            color: black;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 3px;
+            background-color:rgb(237, 231, 231);
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 10px;
+            font-size: 24px;
+            background-color: white;
+
+            box-shadow:
+                inset 1px 1px 0 gray,
+                inset -1px -1px 0 gray;
+        }
+
+        th {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        td {
+            vertical-align: middle;
+        }
+
+        .categoria {
+            width: 20%;
+            text-align: center;
+        }
+        .romance {
+            width: 20%;
+            text-align: left;
+        }
+
+        .ficção {
+            width: 20%;
+            text-align: left;
+        }
+
+        .infantil {
+            width: 20%;
+            text-align: left;
+        }
+
+        .titulo {
+            width: 33%;
+            text-align: left;
+        }
+
+        .autor {
+            width: 28%;
+            text-align: left;
+        }
+
+        .ano {
+            width: 8%;
+            text-align: center;
+        }
+
+        .preco {
+            width: 11%;
+            text-align: left;
+        }
+
+        .aviso {
+            text-align: left;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        .media {
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .valor-media {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Catálogo</h1>
+
+    <table>
+        <tr>
+            <th rowspan="2" class="categoria">Categoria</th>
+
+            <th colspan="2">Obra</th>
+
+            <th rowspan="2" class="ano">Ano</th>
+
+            <th rowspan="2" class="preco">Preço</th>
+        </tr>
+
+        <tr>
+            <td class="titulo">Título</td>
+            <td class="autor">Autor</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3" class="romance">Romance</td>
+
+            <td class="titulo">Orgulho e preconceito</td>
+
+            <td class="autor">Jane Austen</td>
+
+            <td class="ano">1813</td>
+
+            <td class="preco">R$<br>22,00</td>
+        </tr>
+
+        <tr>
+            <td class="titulo">O Grande Gatsby</td>
+
+            <td class="autor">F. Scott Fitzgerald</td>
+
+            <td class="ano">1925</td>
+
+            <td class="preco">R$<br>26,00</td>
+        </tr>
+
+        <tr>
+            <td class="titulo">Como Água Para<br>Chocolate</td>
+
+            <td class="autor">Laura Esquivel</td>
+
+            <td class="ano">1989</td>
+
+            <td class="preco">R$<br>24,00</td>
+        </tr>
+
+        <tr>
+            <td colspan="5" class="aviso">
+                &#9733; Frete grátis para compras acima de R$ 100,00
+            </td>
+        </tr>
+
+        <tr>
+            <td rowspan="2" class="ficção">
+                Ficção<br>Científica
+            </td>
+
+            <td class="titulo">Duna</td>
+
+            <td class="autor">Frank Herbert</td>
+
+            <td class="ano">1965</td>
+
+            <td class="preco">R$<br>46,00</td>
+        </tr>
+
+        <tr>
+            <td class="titulo">1984</td>
+
+            <td class="autor">George Orwell</td>
+
+            <td class="ano">1949</td>
+
+            <td class="preco">R$<br>26,00</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3" class="infantil">Infantil</td>
+
+            <td class="titulo">O Pequeno Príncipe</td>
+
+            <td class="autor">
+                Antoine de Saint-<br>Exupéry
+            </td>
+
+            <td class="ano">1943</td>
+
+            <td class="preco">R$<br>32,00</td>
+        </tr>
+
+        <tr>
+            <td class="titulo">
+                Alice no País das<br>Maravilhas
+            </td>
+
+            <td class="autor">Lewis Carroll</td>
+
+            <td class="ano">1865</td>
+
+            <td class="preco">R$<br>40,00</td>
+        </tr>
+
+        <tr>
+            <td class="titulo">A Teia de Charlotte</td>
+
+            <td class="autor">E. B. White</td>
+
+            <td class="ano">1952</td>
+
+            <td class="preco">R$<br>24,00</td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="media">
+                PREÇO MÉDIO POR LIVRO
+            </td>
+
+            <td colspan="3" class="valor-media">
+                R$ 30,00
+            </td>
+        </tr>
+
+    </table>
+</body>
+</html>
