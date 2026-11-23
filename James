@@ -1,0 +1,100 @@
+def cadastrar_onibus(lista_onibus):
+    try:
+        linha = int(input("Digite o número da linha: "))
+        for bus in lista_onibus:
+            if bus["linha"] == linha:
+                print(f"Aviso: A linha {linha} já está cadastrada!")
+                return
+        rota = input("Digite o nome da rota (ex: Centro - Terminal): ").strip()
+        if not rota:
+            print("O nome da rota não pode ser vazio.")
+            return
+        
+        novo_onibus = {"linha": linha, "rota": rota}
+        lista_onibus.append(novo_onibus)
+        print(f"Linha {linha} ({rota}) cadastrada com sucesso!")
+    except ValueError:
+        print("Erro: O número da linha deve ser um valor inteiro.")
+
+
+def listar_onibus(lista_onibus):
+    if not lista_onibus:
+        print("Nenhum ônibus cadastrado no momento.")
+        return
+
+    print("\n--- Lista de Ônibus Cadastrados ---")
+    for bus in lista_onibus:
+        print(f"Linha: {bus['linha']} | Rota: {bus['rota']}")
+    print("-----------------------------------\n")
+
+
+def ordenar_onibus(lista_onibus, criterio):
+    n = len(lista_onibus)
+    if n < 2:
+        print("Não há ônibus suficientes para ordenar.")
+        return
+
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if criterio == "linha":
+                condicao = lista_onibus[j]["linha"] > lista_onibus[j + 1]["linha"]
+            elif criterio == "rota":
+                condicao = lista_onibus[j]["rota"].lower() > lista_onibus[j + 1]["rota"].lower()
+            else:
+                return
+
+            if condicao:
+                lista_onibus[j], lista_onibus[j + 1] = lista_onibus[j + 1], lista_onibus[j]
+
+    print(f"Lista ordenada por {criterio} com sucesso!")
+    listar_onibus(lista_onibus)
+
+
+def buscar_linha(lista_onibus, linha_procurada):
+    for indice, bus in enumerate(lista_onibus):
+        if bus["linha"] == linha_procurada:
+            print(f"\nÔnibus encontrado na posição {indice + 1}:")
+            print(f"Linha: {bus['linha']} | Rota: {bus['rota']}\n")
+            return bus
+
+    print(f"\nLinha {linha_procurada} não encontrada no sistema.\n")
+    return None
+
+
+def menu():
+    frota = []
+
+    while True:
+        print("=== SISTEMA DE TRANSPORTE URBANO ===")
+        print("1. Cadastrar novo ônibus")
+        print("2. Listar ônibus cadastrados")
+        print("3. Ordenar por número da linha")
+        print("4. Ordenar por nome da rota")
+        print("5. Buscar linha específica")
+        print("0. Sair")
+        
+        opcao = input("Escolha uma opção: ").strip()
+
+        if opcao == "1":
+            cadastrar_onibus(frota)
+        elif opcao == "2":
+            listar_onibus(frota)
+        elif opcao == "3":
+            ordenar_onibus(frota, "linha")
+        elif opcao == "4":
+            ordenar_onibus(frota, "rota")
+        elif opcao == "5":
+            try:
+                linha_busca = int(input("Digite o número da linha que deseja buscar: "))
+                buscar_linha(frota, linha_busca)
+            except ValueError:
+                print("Erro: Digite um número inteiro válido para a linha.")
+        elif opcao == "0":
+            print("Encerrando o sistema...")
+            break
+        else:
+            print("Opção inválida! Tente novamente.\n")
+
+
+if __name__ == "__main__":
+    menu()
